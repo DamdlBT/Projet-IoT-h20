@@ -34,5 +34,6 @@
 ## 5 mars 2020
 
 - Ajout de ma clé SSH à mon compte Github.
-- Configuration de Git sur mon serveur Linode.
-- 
+- Copie des clés ssh sur mon serveur Linode.
+- Clonage du projet Github sur serveur Linode.
+- Programme Python qui lit le log Minecraft et qui imprime le status d'activité des joueurs.
