@@ -10,15 +10,15 @@
 - Serveur de réception de POST requests.
 - Serveur pour affichage de POST requests via dictionnaires et listes Python.
 - Générer un POST request en Phyton avec (requests) et avec `curl`.
-- Création d'un serveur linode (ubuntu 18.04).
+- Création d'un serveur Linode (ubuntu 18.04).
 - Création d'un nouveau user via ligne de commande autre que Root.
 - Ajout du nouveau user au groupe sudo.
-- Ajout du serveur linode au fichier `/etc/hosts`.
-- Création d'un environement virtuel Python sur linode.
+- Ajout du serveur Linode au fichier `/etc/hosts`.
+- Création d'un environement virtuel Python sur Linode.
 - Ajout des dépendances au fichier `requirements.txt`.
 - Instalation des dépendances avec `$ pip install -r requirements.txt`.
-- Transfert de mon fichier serveur(local) vers mon serveur linode avec la commande `scp`.
-- POST request de mon ordinateur local vers mon serveur linode.
+- Transfert de mon fichier serveur(local) vers mon serveur Linode avec la commande `scp`.
+- POST request de mon ordinateur local vers mon serveur Linode.
 
 ## 2 mars 2020
 
@@ -30,3 +30,9 @@
 - Création d'un dépôt GitHub pour le [projet](https://github.com/DamdlBT/Projet-IoT-h20).
 - Création du journal de bord en Markdown.
 - Commit et push du journal sur GitHub.
+
+## 5 mars 2020
+
+- Ajout de ma clé SSH à mon compte Github.
+- Configuration de Git sur mon serveur Linode.
+- 
