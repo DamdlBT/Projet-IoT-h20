@@ -37,3 +37,8 @@
 - Copie des clés ssh sur mon serveur Linode.
 - Clonage du projet Github sur serveur Linode.
 - Programme Python qui lit le log Minecraft et qui imprime le status d'activité des joueurs.
+
+## 9 mars 2020
+
+- Codage de la logique de détection de connexion des joueurs.
+- création d'un nouvel environement virtuel Python dans mon dossier projet.
