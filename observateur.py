@@ -1,19 +1,38 @@
 log = "latest.log"
 
-status = {}
+def read_log(n, log=log):
 
-with open(log, "r") as f:
-    lines = f.readlines()
+    status = {}
 
-for line in lines[:100]:
-    if "joined" in line:
-        # print(line.split()[3])
-        status[line.split()[3]] = True
+    with open(log, "r") as f:
+        lines = f.readlines()
 
-    if "left" in line:
-        # print(line.split()[3])
-        status[line.split()[3]] = False
+    for line in lines[:n]:
+        if "joined" in line:
+            # print(line.split()[3])
+            status[line.split()[3]] = True
 
-    if "joined" in line or "left" in line:
-        print(status)
-    
+        if "left" in line:
+            # print(line.split()[3])
+            status[line.split()[3]] = False
+
+    return status
+
+status_prec = {}
+
+for i in range(262):
+    status = read_log(i)
+    if status_prec != status:
+        for player in status:
+            if player in status_prec:
+                if status[player] != status_prec[player]:
+                    if status[player]:
+                        print(player + " Joined")
+                    else:
+                        print(player + " Left")
+            else:
+                print(player + " Joined")
+
+        print()
+
+    status_prec = status
