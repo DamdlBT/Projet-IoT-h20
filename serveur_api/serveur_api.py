@@ -1,13 +1,21 @@
+from datetime import datetime
+
 from flask import Flask, request
+import dataset
+
 
 app = Flask(__name__)
+db = dataset.connect('sqlite:///db.sqlite')
 
-@app.route("/allo", methods=["POST"])
+actions = db['actions']
+
+@app.route("/", methods=["POST"])
 def index():
     data = request.get_json()
-    for player in data:
-        print(f"player: {player['player']}, action: {player['action']}")
-
+    for action in data:
+        # print(f"player: {player['player']}, action: {player['action']}")
+        action["time"] = datetime.now()
+        actions.insert(action)
     return "200"
 
 
